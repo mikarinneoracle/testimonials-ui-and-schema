@@ -95,8 +95,8 @@
     </style>
     <script>
         function carousel() {
-          // Function trigger in Fn server in localhost with action 'carousel'
           var url = "http://localhost:8080/t/demo/invoke?action=carousel";
+          console.log("Retrieving carousel from " + url);
           fetch(url)
           .then(response => {
             if (!response.ok) {
